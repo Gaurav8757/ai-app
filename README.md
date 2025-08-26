@@ -9,7 +9,9 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+"scripts": 
+    "start": "bun run index.ts", // run server builtin
+    "dev": "bun --watch run index.ts" // watch mode like nodemon
 ```
 
 This project was created using `bun init` in bun v1.2.21. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
