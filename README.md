@@ -1,4 +1,4 @@
-# ai-app
+# AI-App
 
 To install dependencies:
 
@@ -144,4 +144,28 @@ bun.lock
 ## 2. Run formatter in package.json file name
 ``` 
 bun run format
+```
+
+
+# Husky => Automate github flow
+## 1. Install first in root directory
+``` bun add --dev husky ```
+
+## 2. Intialize husky
+``` bunx husky init ```
+``` bun add -d lint-staged ```
+
+### 1. In .husky folder => pre-commit filename
+``` bun run format ```
+
+# Automating Pre-commit Checks With Husky
+
+## 1. Install lint-staged
+``` bun add -d lint-staged ```
+
+## 2. Add file => .lintstagedrc
+```
+{
+    "*.{js,jsx,ts,tsx,css}":"prettier --write"
+}
 ```
