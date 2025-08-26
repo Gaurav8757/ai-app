@@ -169,3 +169,5 @@ bun run format
     "*.{js,jsx,ts,tsx,css}":"prettier --write"
 }
 ```
+## 3. To verify it
+``` git log --oneline ```
